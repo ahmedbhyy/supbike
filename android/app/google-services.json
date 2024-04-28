@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "156496435015",
+    "project_id": "supbike-9475f",
+    "storage_bucket": "supbike-9475f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156496435015:android:31cbc1934d9191ff871e62",
+        "android_client_info": {
+          "package_name": "com.example.supbike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156496435015-p80g22iijpvegnumgjv7rvbki138e57t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.supbike",
+            "certificate_hash": "ed72ee59753547bcc7599deb568d3321f816227a"
+          }
+        },
+        {
+          "client_id": "156496435015-nveg1usrbcpvr7hiatqmpdcl6rjv23ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtPtscoTuwA_rzZfXfPW7LKZTV4AoHZt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156496435015-nveg1usrbcpvr7hiatqmpdcl6rjv23ie.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156496435015-d37m7r9cqve1k3rrgnom09rbrcef0as3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.supbike"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
