@@ -1,7 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:supbike/Controller/home_controllers/home_controller.dart';
 
 class HomePage extends StatelessWidget {
@@ -55,6 +57,17 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ],
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    onPressed: () {
+                      controller.gotonotification();
+                    },
+                    icon: const Icon(
+                      Icons.notifications_active_outlined,
+                      color: Colors.green,
+                      size: 27.0,
+                    ),
                   ),
                   Image.asset(
                     "images/logosupbike.png",
@@ -157,9 +170,17 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
-                        Image.network(
-                          controller.bikes[index]["bikeimage"],
+                        CachedNetworkImage(
+                          imageUrl: controller.bikes[index]["bikeimage"],
                           height: 100.0,
+                          placeholder: (context, url) => Lottie.asset(
+                            "images/lotties/lottie_loadingpic.json",
+                            height: 50.0,
+                          ),
+                          errorWidget: (context, url, error) => const Icon(
+                            Icons.error,
+                            color: Colors.red,
+                          ),
                         ),
                         const Spacer(),
                         Row(

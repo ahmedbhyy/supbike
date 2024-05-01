@@ -127,7 +127,7 @@ class SignInControllerImp extends SignInController {
   @override
   Future signInWithGoogle(context) async {
     try {
-      isloading3 = false;
+      isloading3 = true;
       update();
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
       if (googleUser == null) {

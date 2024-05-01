@@ -11,6 +11,7 @@ import 'package:supbike/View/screens/homescreens/events.dart';
 import 'package:supbike/View/screens/homescreens/home.dart';
 import 'package:supbike/View/screens/homescreens/notifications.dart';
 
+import '../../View/screens/homescreens/mymap.dart';
 import '../../View/screens/homescreens/profil_screen.dart';
 
 
@@ -26,7 +27,7 @@ class StartControllerImp extends StartController {
   List<Widget> listpage = [
     const HomePage(),
     const BikeEvents(),
-    const Notifications(),
+    const MyMap(),
     const ProfilScreen(),
   ];
 

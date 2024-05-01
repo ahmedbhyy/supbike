@@ -2,8 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:supbike/View/screens/homescreens/notifications.dart';
 
-abstract class HomeController extends GetxController {}
+abstract class HomeController extends GetxController {
+  gotonotification();
+}
 
 class HomeControllerImp extends HomeController {
   List<Color> colorizeColors = [
@@ -46,5 +49,10 @@ class HomeControllerImp extends HomeController {
       update();
     });
     super.onInit();
+  }
+
+  @override
+  gotonotification() {
+    Get.to(const Notifications());
   }
 }

@@ -59,9 +59,9 @@ class StartScreen extends StatelessWidget {
                       text: 'Events',
                     ),
                     GButton(
-                      icon: Icons.notifications_active_outlined,
+                      icon: Icons.map_outlined,
                       iconColor: Color.fromARGB(255, 5, 132, 104),
-                      text: 'Notifications',
+                      text: 'Map',
                     ),
                     GButton(
                       icon: Icons.person_2_outlined,
